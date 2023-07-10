@@ -1,0 +1,10 @@
+packages:
+  ./generated/cardano-wallet-client.cabal
+  ./test/cardano-wallet-client-test.cabal
+tests: true
+constraints:
+  aeson <= 2.2,
+  Cabal == 3.10.1.0,
+  -- https://github.com/NorfairKing/sydtest/issues/71
+  optparse-applicative ^>= 0.17
+
